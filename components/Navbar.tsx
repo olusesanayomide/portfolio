@@ -53,7 +53,7 @@ export default function Navbar() {
           <Link
             href="#projects"
             aria-current={projectsActive ? "page" : undefined}
-            className={`rounded-full px-3 py-1 transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+            className={`rounded-full px-3 py-1 transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-black ${
               projectsActive
                 ? "bg-black text-white"
                 : "hover:bg-white/55 hover:text-gray-700"
