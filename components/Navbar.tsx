@@ -51,16 +51,29 @@ export default function Navbar() {
 
         <div className="flex flex-wrap gap-4 text-sm font-medium sm:gap-6">
           <Link
-            href="#projects"
-            aria-current={projectsActive ? "page" : undefined}
-            className={`rounded-full px-3 py-1 transition-all duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-black ${
-              projectsActive
-                ? "bg-black text-white"
-                : "hover:bg-white/55 hover:text-gray-700"
-            }`}
-          >
-            Projects
-          </Link>
+  href="#projects"
+  aria-current={projectsActive ? "page" : undefined}
+  className={`
+    /* Layout & Shape */
+    relative rounded-full px-5 py-2 text-sm font-medium
+    
+    /* The "Liquid" Physics */
+    transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]
+    
+    /* Interactive States */
+    focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2
+    active:scale-90 active:shadow-inner
+    
+    /* Conditional Liquid Glass Logic */
+    ${
+      projectsActive
+        ? "bg-black text-white shadow-lg shadow-black/20 -translate-y-px"
+        : "text-gray-600 hover:bg-white/40 hover:text-black hover:backdrop-blur-md hover:shadow-md hover:shadow-black/5"
+    }
+  `}
+>
+  Projects
+</Link>
         </div>
       </nav>
     </motion.header>
