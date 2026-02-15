@@ -15,7 +15,9 @@
 /* Dark mode override removed to keep consistent light background */
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at top, #dfe5ec 0%, #ebeff4 42%, #f7f9fc 100%),
+    var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

@@ -18,5 +18,13 @@ export const projects: Project[] = [
     description:
       "Backend-focused system for managing library operations including book inventory, borrowing workflows, and background processing using a worker service.",
     stack: ["ASP.NET Core", "PostgreSQL", "Background Worker"],
-    link: "https://github.com/olusesanayomide/Library-Management-System",  },
+    link: "https://github.com/olusesanayomide/Library-Management-System", 
+   },
+  {
+ title: "Enterprise Resource Planning system",
+    description:
+      "A robust ERP backend built with NestJS, Prisma, and PostgreSQL. Unlike basic CRUD apps, this system uses a ledger-based inventory engine where stock is never edited—it is only moved.",
+    stack: ["Nest.js", "PostgreSQL", "Prisma", "Swagger Ui "],
+    link: "https://github.com/olusesanayomide/erp-backend.git", 
+   },
 ];
